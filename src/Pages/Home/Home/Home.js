@@ -1,5 +1,5 @@
 import React from 'react';
-import CateringMenu from '../../CateringMenu/CateringMenu';
+import CateringMenu from '../../CateringMenu/CateringMenu/CateringMenu';
 import Banner from '../Banner/Banner';
 
 

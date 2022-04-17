@@ -1,10 +1,11 @@
-import useMenus from '../../Shared/Hooks/useMenus';
-import MenusCart from './MenuCart/MenusCart';
+
+import useMenus from '../../../Shared/Hooks/useMenus';
+import MenusCart from '../MenuCart/MenusCart';
+
 
 
 const CateringMenu = () => {
     const [menus] = useMenus();
-    console.log(menus);
     return (
         <div className=''>
             <h1 className='text-center text-5xl my-10 font-bold'>My Popular Dishes</h1>
