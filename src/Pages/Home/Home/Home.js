@@ -1,10 +1,13 @@
 import React from 'react';
+import CateringMenu from '../../CateringMenu/CateringMenu';
 import Banner from '../Banner/Banner';
+
 
 const Home = () => {
     return (
         <div>
-            <Banner/>
+            <Banner />
+            <CateringMenu />
         </div>
     );
 };
