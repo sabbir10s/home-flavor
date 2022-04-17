@@ -1,0 +1,9 @@
+.banner {
+  background-image: url(../../../images/hero-2.png);
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-position: 102% 30%;
+  background-size: 700px;
+  height: 80vh;
+  width: 100%;
+}

@@ -9,7 +9,7 @@ const Signup = () => {
         navigate('/login')
     }
     return (
-        <div className='flex justify-center'>
+        <div className='flex mt-7 justify-center'>
 
             <div className="w-full max-w-xs">
                 <form className="bg-white shadow-lg border-[1.5px] rounded px-8 pt-6 pb-8 mb-4">
@@ -27,7 +27,7 @@ const Signup = () => {
                         <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700  leading-tight focus:outline-none focus:shadow-outline" id="confirmPassword" type="password" placeholder="COnfirm Password" />
                     </div>
                     <div className="mb-2">
-                        <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold w-full py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                        <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold w-full py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
                             Sign Up
                         </button>
                     </div>
@@ -45,7 +45,7 @@ const Signup = () => {
                     <SocialLogin />
 
                     <p className="mt-3 align-baseline font-bold text-sm text-gray-500">
-                        Already have an account? <span className=' cursor-pointer text-orange-500 hover:text-orange-600' onClick={handleNavigate}>Login</span>
+                        Already have an account? <span className=' cursor-pointer text-orange-500' onClick={handleNavigate}>Login</span>
                     </p>
                 </form>
             </div>
