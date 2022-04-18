@@ -1,9 +1,9 @@
 import React from 'react';
-
+import logo from '../../images/Logo/logo.png'
 const Footer = () => {
     return (
-        <div>
-            <h1 className='text-1xl'>Footer Section </h1>
+        <div className='bg-gray-500'>
+            <p className='text-center text-white py-5'> © 2020 Home Flavor! All Rights Reserved By VoidCoders</p>
         </div>
     );
 };
