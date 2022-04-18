@@ -16,7 +16,7 @@ const MenuDetails = () => {
     }
 
     return (
-        <div className='h-[80vh] flex justify-center'>
+        <div className='h-[100vh] flex justify-center'>
 
             <div>
                 <div className='text-center w-[500px] border-1 rounded-lg p-5 shadow-lg hover:shadow-2xl'>

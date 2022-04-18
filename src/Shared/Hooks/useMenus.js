@@ -5,7 +5,7 @@ const useMenus = () => {
 
     useEffect(() => {
 
-        fetch('https://raw.githubusercontent.com/sabbir10s/foodieland/main/public/data.json')
+        fetch('https://api.npoint.io/dde0a50608f7132b09ff')
             .then(res => res.json())
             .then(data => setMenus(data))
     }, [])
