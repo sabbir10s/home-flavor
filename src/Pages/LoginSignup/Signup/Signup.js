@@ -15,9 +15,11 @@ const Signup = () => {
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification:true});
+
+
     let errorElement;
-    let errorMessage;
+
     if (error) {
         errorElement = <p className='text-red-500'>{error?.message}</p>
     }

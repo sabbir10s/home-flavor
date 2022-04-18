@@ -5,7 +5,7 @@ const useMenus = () => {
     
     useEffect(() => {
 
-        fetch('data.json')
+        fetch('https://raw.githubusercontent.com/sabbir10s/foodieland/main/public/data.json')
             .then(res => res.json())
             .then(data => setMenus(data))
     }, [])
