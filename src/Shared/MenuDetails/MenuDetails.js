@@ -6,9 +6,9 @@ const MenuDetails = () => {
     const { menuId } = useParams();
     const [menus] = useMenus();
 
-    const serchId = +menuId;
+    const searchId = +menuId;
 
-    const menu = menus.find(menu => menu.id === serchId);
+    const menu = menus.find(menu => menu.id === searchId);
     console.log(menu);
 
     const handleCheckout = () => {

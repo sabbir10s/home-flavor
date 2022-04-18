@@ -12,10 +12,10 @@ const Navbar = () => {
         signOut(auth);
     }
     return (
-        <div className='flex justify-between items-center  px-10 py-7 shadow-lg'>
+        <div className='lg:flex lg:justify-between lg:items-center  px-10 py-7 shadow-lg'>
             <div>
                 <Link to="/home">
-                    <img className='w-[160px]' src={logo} alt="" />
+                    <img className='mx-auto w-[160px]' src={logo} alt="" />
                 </Link>
             </div>
 

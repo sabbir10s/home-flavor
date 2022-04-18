@@ -12,7 +12,7 @@ const Footer = () => {
                     <p>Materfront avenue, street 2005F, Dhaka</p>
                 </div>
                 <div className='h-[1px] my-3 bg-white w-full'></div>
-                <p className='text-center text-white py-2'> © 2020 Home Flavor! All Rights Reserved By VoidCoders</p>
+                <p className='text-center text-white py-2'> © 2022 Home Flavor! All Rights Reserved By VoidCoders</p>
             </div>
         </div>
     );
