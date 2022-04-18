@@ -1,3 +1,19 @@
+# Project: Home Flavor
+
+## [Live Site Link](https://foodieland-ff14f.web.app/)
+
+## Project Overview
+
+Home Flavor is a home food catering service web site. Here is some information about this project.
+
+* The requirement was a Single Page ApplicationIn(SPA). For this reason in this project i used React Router.
+* There are one private route in this project. 
+* To design this site, and make it responsive, I used Tailwind CSS.
+* In this project i used Firebase Authentication. 
+* There are 4 Authentication system in this site. Email Password, Google, Github, Facebook. 
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

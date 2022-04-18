@@ -10,7 +10,7 @@ const Banner = () => {
                     <div>
                         <h1 className='text-5xl leading-normal font-bold mb-5'>I believe good food offer great smile</h1>
                         <p>'Home Flavor' is a neighborhood home food catering service, serving seasonal global cuisine driven by the faire.</p>
-                        <button className='bg-yellow-400 px-5 py-2 rounded-full font-medium hover:shadow-md mt-3'>Order Now</button>
+                        {/* <button className='bg-yellow-400 px-5 py-2 rounded-full font-medium hover:shadow-md mt-3'>Order Now</button> */}
                     </div>
                 </div>
                 <div>
