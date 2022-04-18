@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
@@ -10,8 +10,9 @@ const Login = () => {
     const handleNavigate = () => {
         navigate('/signup')
     }
+    const location = useLocation();
+    const from = location.state?.from.pathname || '/'
     const [email, setEmail] = useState('');
-
 
     const handleEmailBlur = (e) => {
         setEmail(e.target.value);
@@ -30,7 +31,7 @@ const Login = () => {
         errorElement = <p className='text-red-500'>{error?.message}</p>
     }
     if (user) {
-        navigate('/home')
+        navigate(from, { replace: true })
     }
     const handleLogin = event => {
         event.preventDefault();
@@ -43,7 +44,7 @@ const Login = () => {
         await sendPasswordResetEmail(email);
         alert('Sent email');
     }
-    
+
     return (
         <div className='flex mt-7 justify-center'>
 
