@@ -1,20 +1,22 @@
 import React from 'react';
 import chef from '../../../images/person.png'
+import PrimaryButton from '../../../Shared/Button/PrimaryButton';
 import './Banner.css';
 
 const Banner = () => {
     return (
-        <div className=''>
-            <div className=' lg:grid lg:grid-cols-2 flex flex-col-reverse justify-center items-center  mx-10  h-[100vh]'>
+        <div className='banner my-7'>
+            <div className=' grid md:grid-cols-2'>
                 <div className='flex justify-center items-center'>
-                    <div className='mt-10 lg:mt-0'>
-                        <h1 className='text-3xl lg:text-5xl lg:leading-normal font-bold lg:mb-5'>I believe good food offer great smile</h1>
-                        <p>'Home Flavor' is a neighborhood home food catering service, serving seasonal global cuisine driven by the faire.</p>
+                    <div>
+                        <h3 className='lg:text-7xl md:text-5xl text-4xl mb-3 font-bold font-mono'>I believe good food offer great smile</h3>
+                        <p className='text-gray-500 mb-3'>'Home Flavor' is a neighborhood home food catering service, serving seasonal global cuisine driven by the faire.</p>
+                        <PrimaryButton>Book Now</PrimaryButton>
 
                     </div>
                 </div>
                 <div>
-                    <img className='w-full lg:mt-0' src={chef} alt="" />
+                    <img className='min-w-[300px] lg:mt-24' src={chef} alt="" />
                 </div>
             </div>
         </div>
