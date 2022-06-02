@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../../images/Logo/white logo.png'
 const Footer = () => {
     return (
-        <footer class="footer footer-center p-10 bg-[#282727] text-white rounded">
+        <footer class="footer footer-center p-10 bg-[#282727] text-white">
             <div class="grid grid-flow-col gap-4">
                 <a class="link link-hover">About us</a>
                 <a class="link link-hover">Contact</a>
