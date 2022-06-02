@@ -30,6 +30,7 @@ const Login = () => {
 
     let errorElement;
     if (error) {
+        console.log(error);
         errorElement = <p className='text-red-500'>{error?.message}</p>
     }
     if (user) {
@@ -48,27 +49,33 @@ const Login = () => {
     }
 
     return (
-        <div className='flex mt-7 justify-center'>
+        <div className='flex py-20 bg-slate-100 justify-center'>
 
-            <div className="w-full max-w-xs">
+            <div className="w-full max-w-sm">
                 <form onSubmit={handleLogin} className="bg-white shadow-lg border-[1.5px] rounded px-8 pt-6 pb-8 mb-4">
 
-                    <p className=" block text-)gray-700 text-2xl font-bold mb-4"> Please Login</p>
+                    <p className=" block text-gray-700 text-xl font-bold mb-4"> Please Login</p>
 
                     <div className="mb-4">
-                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700  leading-tight focus:outline-none focus:shadow-outline" onBlur={handleEmailBlur} name='email' type="email" placeholder="Your email" required />
+                        <input className=" appearance-none border rounded w-full py-2 px-3 text-gray-700  leading-tight focus:outline-none focus:shadow-outline" onBlur={handleEmailBlur} name='email' type="email" placeholder="Your email" required />
                     </div>
                     <div className="mb-4">
-                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700  leading-tight focus:outline-none focus:shadow-outline" name='password' type="password" placeholder="Password" />
+                        <input className=" appearance-none border rounded w-full py-2 px-3 text-gray-700  leading-tight focus:outline-none focus:shadow-outline" name='password' type="password" placeholder="Password" />
                     </div>
                     {errorElement}
                     <div className="mb-2">
                         <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold w-full py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
                             Login
-                        </button>
+                        </button>{
+                            error && <p className="mt-3 align-baseline text-sm text-gray-500">
+                                Forget your password?   <button className=' cursor-pointer text-orange-500' type="submit" onClick={resetPassword}>Reset here</button>
+                            </p>
+                        }
+
+
                     </div>
 
-                    <div className='flex mb-1 justify-center items-center'>
+                    <div className='flex my-5 justify-center items-center'>
                         <div className='h-[1px] w-full bg-gray-500'>
 
                         </div>
@@ -78,13 +85,11 @@ const Login = () => {
                         </div>
                     </div>
                     <SocialLogin />
-                    <p className="mt-3 align-baseline font-bold text-sm text-gray-500">
-                        New in home flavor? <span className=' cursor-pointer text-orange-500' onClick={handleNavigate}>Please Sign Up</span>
+                    <p className="mt-5 align-baseline text-sm text-gray-500">
+                        New in home flavor? <span className=' cursor-pointer text-orange-500' onClick={handleNavigate}>Sign Up</span>
                     </p>
-                    <p className="mt-3 align-baseline font-bold text-sm text-gray-500">
-                        Forget your password?
-                    </p>
-                    <button className=' cursor-pointer text-orange-500' type="submit" onClick={resetPassword}>Reset here</button>
+
+
 
                 </form>
                 <ToastContainer />

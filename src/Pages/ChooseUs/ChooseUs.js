@@ -6,7 +6,7 @@ import food from '../../images/food.png'
 const ChooseUs = () => {
     return (
         <div className='container mx-auto'>
-            <h1 className='text-center text-3xl lg:text-5xl font-bold mt-12 mb-5'>Why Choose Me</h1>
+            <h1 className='text-center text-3xl lg:text-4xl text-black font-bold mt-12 mb-5 font-mono'>Why Choose Me</h1>
             <p className='text-center text-gray-500 leading-relaxed'>Food Service Or Catering Industry Defines Those Businesses, Institutions, And <br /> Companies Responsible For Any Meal Prepared Outside The Home.</p>
 
             <div className='my-10 lg:flex lg:justify-center gap-12'>

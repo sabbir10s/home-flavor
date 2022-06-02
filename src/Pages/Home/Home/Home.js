@@ -6,7 +6,7 @@ import Banner from '../Banner/Banner';
 
 const Home = () => {
     return (
-        <div className='mx-10'>
+        <div className='lg:mx-10 mx-4'>
             <Banner />
             <CateringMenu />
             <ChooseUs />

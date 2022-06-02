@@ -15,7 +15,7 @@ const Signup = () => {
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification:true});
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
 
     let errorElement;
@@ -39,22 +39,22 @@ const Signup = () => {
         createUserWithEmailAndPassword(email, password);
     }
     return (
-        <div className='flex mt-7 justify-center'>
+        <div className='flex md:py-8 justify-center md:bg-slate-100'>
 
-            <div className="w-full max-w-xs">
+            <div className="w-full max-w-sm">
                 <form onSubmit={handleSignUp} className="bg-white shadow-lg border-[1.5px] rounded px-8 pt-6 pb-8 mb-4">
                     <div className="mb-4">
-                        <p className="block text-gray-700 text-2xl font-bold mb-3"> Creat Account </p>
-                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name='name' type="text" placeholder="Username" required />
+                        <p className="block text-gray-700 text-xl font-bold mb-3"> Creat Account </p>
+                        <input className=" appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name='name' type="text" placeholder="Username" required />
                     </div>
                     <div className="mb-4">
-                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700  leading-tight focus:outline-none focus:shadow-outline" name='email' type="email" placeholder="Your email" required />
+                        <input className=" appearance-none border rounded w-full py-2 px-3 text-gray-700  leading-tight focus:outline-none focus:shadow-outline" name='email' type="email" placeholder="Your email" required />
                     </div>
                     <div className="mb-4">
-                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700  leading-tight focus:outline-none focus:shadow-outline" name='password' type="password" placeholder="Password" required />
+                        <input className=" appearance-none border rounded w-full py-2 px-3 text-gray-700  leading-tight focus:outline-none focus:shadow-outline" name='password' type="password" placeholder="Password" required />
                     </div>
                     <div className="mb-4">
-                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700  leading-tight focus:outline-none focus:shadow-outline" name="confirmPassword" type="password" placeholder="COnfirm Password" required />
+                        <input className=" appearance-none border rounded w-full py-2 px-3 text-gray-700  leading-tight focus:outline-none focus:shadow-outline" name="confirmPassword" type="password" placeholder="COnfirm Password" required />
                     </div>
                     {errorElement}
                     <p className='text-red-500'>{message}</p>
@@ -64,7 +64,7 @@ const Signup = () => {
                         </button>
                     </div>
 
-                    <div className='flex mb-1 justify-center items-center'>
+                    <div className='flex my-5 justify-center items-center'>
                         <div className='h-[1px] w-full bg-gray-500'>
 
                         </div>
@@ -76,7 +76,7 @@ const Signup = () => {
 
                     <SocialLogin />
 
-                    <p className="mt-3 align-baseline font-bold text-sm text-gray-500">
+                    <p className="mt-3 align-baseline text-sm text-gray-500">
                         Already have an account? <span className=' cursor-pointer text-orange-500' onClick={handleNavigate}>Login</span>
                     </p>
                 </form>
