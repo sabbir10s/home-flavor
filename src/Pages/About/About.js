@@ -5,9 +5,9 @@ import Footer from '../../Shared/Footer/Footer';
 const About = () => {
     return (
         <>
-            <div className=''>
+            <div className='lg:my-3 my-5 '>
 
-                <div className='grid grid-cols-5 justify-items-end items-center'>
+                <div className='grid grid-cols-1 md:grid-cols-5 justify-items-end items-center'>
                     <div className=' col-span-2'>
                         <img src={sideImg2} alt="" />
                     </div>
@@ -17,7 +17,7 @@ const About = () => {
                             Home Flavor is a place where cooked food is sold to the public, and where people sit down to eat it. It is also a place where people go to enjoy the time and to eat a meal. Some restaurants are a chain, meaning that there are restaurants which have the same name and serve and where people the same food. time and to eat a meal. Some restaurants are a chain, time and to eat a meal. Some restaurants are a chain.
                         </p>
                     </div>
-                    <div className='col-span-1'>
+                    <div className='col-span-1 md:block hidden'>
                         <img src={sideImg} alt="" />
                     </div>
                 </div>
