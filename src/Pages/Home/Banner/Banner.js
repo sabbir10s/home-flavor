@@ -6,7 +6,7 @@ import './Banner.css';
 const Banner = () => {
     return (
         <div className='banner'>
-            <div className=' grid md:grid-cols-2 mt-5 md:my-7'>
+            <div className=' grid md:grid-cols-2 mt-3 md:my-7'>
                 <div className='flex justify-center items-center'>
                     <div>
                         <h3 className='text-black leading-normal lg:leading-[90px] lg:text-7xl md:text-5xl text-4xl mb-3 font-bold font-mono'>I believe good food offer great smile</h3>

@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactStars from 'react-rating-stars-component';
 import { useNavigate } from 'react-router-dom';
 import './MenuCart.css'
 const MenusCart = ({ menu }) => {
@@ -8,7 +9,12 @@ const MenusCart = ({ menu }) => {
     const handelMenuDetails = id => {
         navigate(`/menudetails/${id}`);
     }
+    const handleRating = {
+        size: 35,
+        value: rating,
+        edit: false,
 
+    }
     return (
         <div className='cart border-1 rounded-md shadow-md hover:shadow-xl'>
             <div>
@@ -16,9 +22,11 @@ const MenusCart = ({ menu }) => {
                     <img className='mx-auto max-w-[200px]' src={img} alt="" />
                 </div>
                 <div className='text-center my-5'>
-                    <p className='text-3xl font-bold text-yellow-500'>{name}</p>
-                    <p>Rating: {rating}</p>
-                    <p>Price: {price}/-Tk</p>
+                    <p className='text-2xl tracking-wide font-bold text-gray-700 font-mono'>{name}</p>
+                    <div className='flex justify-center'>
+                        <ReactStars  {...handleRating} />
+                    </div>
+                    <p className='text-xl font-bold font-mono text-gray-700'>{price}/-Tk</p>
                 </div>
             </div>
             <div className='cart-button hidden rounded-md'>

@@ -10,7 +10,7 @@ const CateringMenu = () => {
         <div className=''>
             <h1 className='text-center text-black text-3xl lg:text-4xl mt-20 mb-12 font-bold font-mono'>My Popular Dishes</h1>
 
-            <div className='grid lg:grid-cols-3 grid-cols-1 gap-10 container mx-auto'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-10 container'>
                 {
                     menus.map(menu => <MenusCart menu={menu} key={menu.id}></MenusCart>)
                 }
