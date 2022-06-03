@@ -1,8 +1,8 @@
 import React from 'react';
 import Footer from '../../../Shared/Footer/Footer';
 import CateringMenu from '../../CateringMenu/CateringMenu/CateringMenu';
-import ChooseUs from '../../ChooseUs/ChooseUs';
 import Banner from '../Banner/Banner';
+import Serve from '../Serve/Serve';
 
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
         <div>
             <Banner />
             <CateringMenu />
-            <ChooseUs />
+            <Serve />
             <Footer />
         </div>
     );

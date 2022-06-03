@@ -1,0 +1,15 @@
+.chef {
+  position: relative;
+  z-index: 10;
+  background-color: white;
+}
+.chef-cart {
+  z-index: 0;
+  background-color: #f7ca3e;
+  left: 37%;
+  bottom: -1150px;
+  width: 385px;
+  height: 390px;
+  position: absolute;
+  transform: rotate(-2deg);
+}
