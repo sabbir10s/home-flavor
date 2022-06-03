@@ -6,7 +6,7 @@ import './Serve.css'
 
 const Serve = () => {
     return (
-        <div className='mx-10 my-14'>
+        <div className='mx-5 lg:mx-10 my-14'>
             <h2 className='text-center text-lg text-[#77af17] uppercase font-bold'>OUR SERVICE</h2>
             <h1 className='text-center text-4xl text-black font-mono font-bold mb-3'>Why Choose Us</h1>
             <p className='text-center text-gray-500 leading-relaxed'>Food Service Or Catering Industry Defines Those Businesses, Institutions, And <br /> Companies Responsible For Any Meal Prepared Outside The Home.</p>

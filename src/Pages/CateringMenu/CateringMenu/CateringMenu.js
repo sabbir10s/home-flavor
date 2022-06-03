@@ -12,7 +12,8 @@ const CateringMenu = () => {
     }
     return (
         <div className='lg:mx-10 mx-4'>
-            <h1 className='text-center text-black text-3xl lg:text-4xl mt-20 mb-12 font-bold font-mono'>My Popular Dishes</h1>
+            <h2 className='text-center text-lg text-[#77af17] uppercase mt-20 font-bold'>POPULAR MENU</h2>
+            <h1 className='text-center text-black text-3xl lg:text-4xl  mb-12 font-bold font-mono'>My Popular Dishes</h1>
 
             <div className='grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-10'>
                 {

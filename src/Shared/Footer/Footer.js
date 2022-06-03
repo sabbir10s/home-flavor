@@ -11,10 +11,10 @@ const Footer = () => {
     return (
         <footer className=' bg-[rgb(40,39,39)]' >
             <div className='lg:mx-10 grid gap-5 lg:grid-cols-3'>
-                <div class=" lg:col-span-2 text-white mx-auto px-5 pt-5">
+                <div className=" lg:col-span-2 text-white mx-auto px-5 pt-5">
                     <div className='grid grid-cols-2 gap-32 justify-items-center items-center'>
                         <div> <img className='w-[180px]' src={logo} alt="" /></div>
-                        <div class="flex gap-5 text-3xl">
+                        <div className="flex gap-5 text-3xl">
                             <a href='https://www.facebook.com/'><BsFacebook /></a>
                             <a href='https://youtube.com/'><IoLogoYoutube /></a>
                             <a href='https://twitter.com/'><AiFillTwitterCircle /></a>
@@ -24,7 +24,7 @@ const Footer = () => {
                         <p>Food Service Or Catering Industry Defines Those Businesses, Institutions, And
                             Companies Responsible For Any Meal Prepared Outside The Home.</p>
                     </div>
-                    <div class=" my-5 border border-white"></div>
+                    <div className=" my-5 border border-white"></div>
                     <div className='grid lg:grid-cols-3 gap-5'>
                         <div className='flex items-center gap-5'>
                             <div>
@@ -62,41 +62,43 @@ const Footer = () => {
                         <div className='text-sm font-md'>
                             <p>  </p>
                             <table>
-                                <tr>
-                                    <td>Tuesday </td>
-                                    <td>.........................................</td>
-                                    <td>7AM - 9PM</td>
-                                </tr>
-                                <tr>
-                                    <td>Wednesday </td>
-                                    <td>.........................................</td>
-                                    <td>7AM - 9PM</td>
-                                </tr>
-                                <tr>
-                                    <td>Thursday </td>
-                                    <td>.........................................</td>
-                                    <td>7AM - 9PM</td>
-                                </tr>
-                                <tr>
-                                    <td>Friday:</td>
-                                    <td>.........................................</td>
-                                    <td>7AM - 9PM</td>
-                                </tr>
-                                <tr>
-                                    <td>Saturday </td>
-                                    <td>.........................................</td>
-                                    <td>7AM - 9PM</td>
-                                </tr>
-                                <tr>
-                                    <td>Sunday </td>
-                                    <td>.........................................</td>
-                                    <td>7AM - 9PM</td>
-                                </tr>
-                                <tr>
-                                    <td>Monday </td>
-                                    <td>.........................................</td>
-                                    <td>Close</td>
-                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <td>Tuesday </td>
+                                        <td>.........................................</td>
+                                        <td>7AM - 9PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wednesday </td>
+                                        <td>.........................................</td>
+                                        <td>7AM - 9PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Thursday </td>
+                                        <td>.........................................</td>
+                                        <td>7AM - 9PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Friday:</td>
+                                        <td>.........................................</td>
+                                        <td>7AM - 9PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Saturday </td>
+                                        <td>.........................................</td>
+                                        <td>7AM - 9PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sunday </td>
+                                        <td>.........................................</td>
+                                        <td>7AM - 9PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Monday </td>
+                                        <td>.........................................</td>
+                                        <td>Close</td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </div>
                     </div>

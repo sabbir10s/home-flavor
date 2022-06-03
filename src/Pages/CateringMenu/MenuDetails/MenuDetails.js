@@ -1,8 +1,8 @@
 import ReactStars from 'react-rating-stars-component';
 import { useNavigate, useParams } from 'react-router-dom';
-import Footer from '../Footer/Footer';
-import useMenus from '../Hooks/useMenus';
-import Loading from '../Loading/Loading';
+import Footer from '../../../Shared/Footer/Footer';
+import useMenus from '../../../Shared/Hooks/useMenus';
+import Loading from '../../../Shared/Loading/Loading';
 
 const MenuDetails = () => {
     const navigate = useNavigate()
@@ -32,13 +32,13 @@ const MenuDetails = () => {
     }
     return (
         <>
-            <div className='mx-10 my-14 flex justify-center'>
+            <div className='lg:mx-10 my-14 flex justify-center'>
 
-                <div className='grid grid-cols-1 lg:grid-cols-2 p-10 items-center'>
+                <div className='grid grid-cols-1 lg:grid-cols-2 p-2 lg:p-10 items-center'>
                     <div>
                         <img className='mx-auto w-[400px]' src={img} alt="" />
                     </div>
-                    <div className='p-10'>
+                    <div className='p-4 lg:p-10'>
                         <p className='text-4xl text-black font-mono font-bold'>{name}</p>
                         <div className='flex gap-2 items-center'> <ReactStars  {...handleRating} /> <span className='text-gray-500'>(35)</span></div>
 
