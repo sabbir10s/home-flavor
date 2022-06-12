@@ -5,6 +5,7 @@ import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Loading from '../../../Shared/Loading/Loading';
 
 const Login = () => {
 
@@ -35,6 +36,9 @@ const Login = () => {
     }
     if (user) {
         navigate(from, { replace: true })
+    }
+    if (loading || sending) {
+        return <Loading />
     }
     const handleLogin = event => {
         event.preventDefault();

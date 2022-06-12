@@ -21,8 +21,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className='mt-5'>
-                        <p>Food Service Or Catering Industry Defines Those Businesses, Institutions, And
-                            Companies Responsible For Any Meal Prepared Outside The Home.</p>
+                        <p>Home Flavor is a full-service catering based company in Dhaka for all your catering needs. Home Flavor is devoted to delivering healthy, super delicious food and delivery with trusty and timely service to spice up your event.</p>
                     </div>
                     <div className=" my-5 border border-white"></div>
                     <div className='grid lg:grid-cols-3 gap-5'>
